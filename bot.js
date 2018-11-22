@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const RichEmbed = require("discord.js");
 const { Client, Util } = require('discord.js');
 const client = new Discord.Client();
-const prefix = "#1";
+const prefix = "#1"
  
 const devs = ["477729848257937409"]
  
