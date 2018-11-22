@@ -1,5 +1,4 @@
 const Discord = require("discord.js");
-const FFMPEG = require("FFMPEG");
 const RichEmbed = require("discord.js");
 const { Client, Util } = require('discord.js');
 const client = new Discord.Client();
@@ -30,4 +29,4 @@ client.on('message', msg => {
 }
 });
 
-client.login("NTExMjc3MTYzNjczMDI2NTYx.DsokCA.hsPkTpa36y3bXc7pUXjvsolzzxk");
+client.login(process.env.BOT_TOKEN);
