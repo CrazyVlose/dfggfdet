@@ -7,7 +7,9 @@ const prefix = "#";
 const devs = ["485380710656507914"]
  
 
-
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
  
 
 
