@@ -2,11 +2,11 @@ const Discord = require("discord.js");
 const RichEmbed = require("discord.js");
 const { Client, Util } = require('discord.js');
 const client = new Discord.Client();
-const prefix = "#1"
+const prefix = "#9"
  
 const devs = ["477729848257937409"]
  
-const adminprefix = "1";
+const adminprefix = "9";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
@@ -51,14 +51,15 @@ client.on('message', message => {
     }
  
   });
+
 client.login(process.env.BOT_TOKEN);
-
-
+client.login(process.env.TOKEN);
+client.login(process.env.BOT);
 
 //كود يدخل البوت الروم
 client.on('message', msg => {
 
-    if (msg.content == '#1join') {
+    if (msg.content == '#9join') {
         if (msg.member.voiceChannel) {
 
      if (msg.member.voiceChannel.joinable) {
