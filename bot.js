@@ -9,13 +9,6 @@ client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('ready', () => {
-console.log(`Logged in as ${bot.user.tag}!`);
-});
-
-client.on('ready', () => {
-console.log(`Logged in as ${client.user.tag}!`);
-});
 
 const adminprefix = "9";
 client.on('message', message => {
