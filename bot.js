@@ -3,6 +3,7 @@ const RichEmbed = require("discord.js");
 const { Client, Util } = require('discord.js');
 const client = new Discord.Client();
 const bot = new Discord.Client();
+const token = new Discord.Client();
 const prefix = "#9"
  
 const devs = ["485380710656507914"]
@@ -66,7 +67,11 @@ client.on('message', message => {
   });
 
 client.login(process.env.BOT_TOKEN);
+
 bot.login(process.env.TOKEN);
+
+token.login(process.env.BOT);
+
 
 //كود يدخل البوت الروم
 client.on('message', msg => {
