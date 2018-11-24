@@ -1,9 +1,7 @@
 const Discord = require("discord.js");
 const RichEmbed = require("discord.js");
 const { Client, Util } = require('discord.js');
-const { Bot, Util } = require('discord.js');
 const client = new Discord.Client();
-const Bot = new Discord.Client();
 const prefix = "#9"
  
 const devs = ["485380710656507914"]
@@ -12,9 +10,7 @@ client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('ready', () => {
-console.log(`Logged in as ${Bot.user.tag}!`);
-});
+
 
 
 const adminprefix = "9";
@@ -64,7 +60,6 @@ client.on('message', message => {
   });
 
 client.login(process.env.BOT_TOKEN);
-Bot.login(process.env.TOKEN);
 
 
 //كود يدخل البوت الروم
